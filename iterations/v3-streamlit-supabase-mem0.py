@@ -31,6 +31,7 @@ dotenv_path = project_root / '.env'
 # dotenv_path = project_root / 'studio-integration-version' / '.env'
 
 load_dotenv(dotenv_path, override=True)
+load_dotenv()
 
 # Initialize Supabase client
 supabase_url = os.environ.get("SUPABASE_URL", "")
